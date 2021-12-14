@@ -1,0 +1,461 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+button {
+    border:none;
+}
+
+input {
+    border:none;
+    border-bottom: 1px solid #ddd;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width:1100px;
+    margin:0 auto;
+    padding:0 !important;
+}
+
+
+.img {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin:10px;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* 헤더 영역 시작 */
+header {
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(102, 102, 102, 0.5);
+}
+
+.logo img {
+    width: 198px;
+    height: 250px;
+    margin-top: 44px;
+}
+
+header > * {
+    color:#fff;
+}
+
+header a {
+    color:#fff;
+}
+
+a {
+    padding:10px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color:rgb(145, 145, 145);
+}
+
+p {margin-bottom: 0 !important;}
+
+/* 헤더 영역 끝 */
+
+/* 홈(메인) 영역 시작 */
+#visual {
+    position: relative;
+}
+
+#visual img {
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+}
+
+.logo-text {
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top:40%;
+    left:32%;
+}
+
+
+.logo-text h1 {
+    font-family: 'OSEB 800';
+    font-weight: bold;
+}
+
+.logo-text >* {
+    color:#fff;
+}
+
+#main {
+    margin:100px;
+    margin-top:140px;
+}
+
+.bottom-text {
+    width:60%;
+    left:21%;
+    height:130px;
+    background-color: #fff;
+    position: absolute;
+    bottom:0;
+    flex-direction: column;
+}
+
+.bottom-text h2 {
+    font-family: 'OSEB 800';
+    font-weight: bold;
+    margin-top: 160px;
+}
+
+.bottom-text h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto 0;
+    background: #000;
+}
+
+
+.icon-card {
+    top:20%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap:20px;
+}
+
+.icard {
+    flex-direction: column;
+    padding:10px;
+    border-left:1px solid #ddd;
+}
+
+.icard p {
+    text-align: center;
+    color:#888888;
+}
+
+.icard h3 {
+    font-size: 24px;
+}
+
+.icard img {
+    margin-bottom: 15px;
+}
+
+.icard:nth-child(1) {
+    border-left:none;
+}
+
+#ex-section {
+    position: relative;
+}
+
+#ex-section img {
+    height:40vh;
+    width:100%;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.ex-card {
+    position: absolute;
+    top:0;
+    width:50%;
+    right:0;
+    height:100%;
+    background-color: rgb(24, 13, 9);
+    padding:100px;
+}
+
+.ex-card > * {
+    color:#fff;
+}
+
+
+#business {
+    background-color: #f5f5f5;
+    height:80vh;
+}
+
+.side-text {
+    margin:20px;
+}
+
+.side-text h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -0.15px;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.side-text h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto 0;
+    background: #000;
+}
+
+.more-group {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+}
+
+.more-card {
+    background-color: #fff;
+    position: relative;
+    height:307px;
+}
+
+.more-card img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* 
+.more-card img:hover {
+    position: absolute;
+    transform: scale(1.8);
+} */
+
+.more-card button {
+    position: absolute;
+    bottom:10%;
+    right:10%;
+    padding:10px;
+}
+
+
+.more-card button a {
+    color:#000;
+}
+
+/* notice 게시판 영역 시작 */
+#bImg{
+    width:100%;
+    height:60vh;
+    object-fit: cover;
+}
+
+#img-visual {
+    position: relative;
+}
+
+.side-nav {
+    width:60%;
+    left:21%;
+    height:100px;
+    background-color: #fff;
+    position: absolute;
+    bottom:0;
+    padding:20px;
+    border:1px solid #ddd;
+}
+
+.icon-img {
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.side-nav img {
+    padding-top:20px;
+    padding-right: 20px;
+}
+
+/*peed 영역 시작 */
+
+.box-group {
+    display: grid;
+    grid-template-columns: repeat(4,270px);
+}
+.box {
+    width:250px;
+    height:250px;
+    background-color: #ddd;
+}
+/*관리자 영역 시작 */
+
+/* 글작성 영역 시작 */
+input {
+    border:none;
+    border-bottom: 1px solid #ddd;
+}
+
+#read { position: relative;}
+
+.card-group {
+    position: absolute;
+    right:0;
+}
+
+.card-group {
+    background-color: #fff !important;
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius: 5px;
+}
+.card-group button {
+    font-size: 13px;
+}
+
+.card-group a {
+    font-size: 13px;
+    color:#000;
+}
+
+#comment {
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+#cooment_form {
+    margin:20px;
+}
+
+#submit {
+    padding: 10px;
+    width: 7%;
+    background-color: #deccb0;
+}
+
+#text-group {
+    margin:20px;
+}
+
+.find-group a {
+    color:#000;
+    background-color: #ddd;
+    font-size: 5px;
+}
+
+.btn-primary {
+    border:none;
+    width:40%;
+    background-color: #bda379;
+}
+
+.form-group input {
+    width:100%;
+    padding:10px;
+}
+
+#find {
+    border:none;
+    width:350px;
+    height:36px;
+    background-color: #bda379;
+    border-radius: 5px;
+    color:#fff;
+}
+
+footer {
+    height:140px;
+    background-color:rgb(31 18 3);
+    color:#fff;
+}
+
+#findPage {
+    margin:70px;
+}
+
+#inputGroup-sizing-sm{
+    background-color: #c58d470f;
+    border: 1px solid #bb9064;
+}
+
+ #moreBtn {
+     border-radius: 10px;
+}
+
+ #user-popup {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    right: 9%;
+    top: 103px;
+    opacity: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    text-align: center;
+ }
+
+ #profile-popup {
+    position: fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    display: none;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 100;
+}
+
+#read {
+    min-height: 29vh;
+}
+
+#profile-popup .inner {
+    background-color: #fff;
+    border-top: 30px solid #deccb0;
+     width:500px;
+     height:130px;
+     position: absolute;
+     top:20%;
+     left:37%;
+     padding:40px;
+ }
+
+ #close {
+     cursor: pointer;
+     position: absolute;
+     top:-32px;
+ }
+
+
+
+
+
+
+
+
